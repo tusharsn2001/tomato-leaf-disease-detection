@@ -6,7 +6,7 @@ const app = require('./app')
 const port = 3000
 
 
-mongoose.connect('mongodb+srv://tusharcsemitrc2020:plant@plantcluster.nk5y0ju.mongodb.net/majorproject', {
+mongoose.connect(process.env.URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(con => {
